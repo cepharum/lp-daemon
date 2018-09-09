@@ -1,23 +1,35 @@
 {
-  "name": "lp-daemon",
-  "version": "0.0.1",
-  "description": "line printer daemon",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cepharum/lp-daemon.git"
-  },
-  "author": "cepharum GmbH",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cepharum/lp-daemon/issues"
-  },
-  "homepage": "https://github.com/cepharum/lp-daemon#readme",
-  "dependencies": {
-    "debug": "^3.1.0",
-    "minimist": "^1.2.0"
-  }
+	"name": "lp-daemon",
+	"version": "0.0.1",
+	"description": "line printer daemon",
+	"main": "lib/index.js",
+	"bin": {
+		"lp-daemon": "./lib/cli.js"
+	},
+	"scripts": {
+		"start": "cross-env DEBUG=* node lib/cli.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"style": "eslint ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cepharum/lp-daemon.git"
+	},
+	"author": "cepharum GmbH",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/cepharum/lp-daemon/issues"
+	},
+	"homepage": "https://github.com/cepharum/lp-daemon#readme",
+	"dependencies": {
+		"cross-env": "^5.2.0",
+		"debug": "^3.1.0",
+		"ipp": "^2.0.1",
+		"minimist": "^1.2.0"
+	},
+	"devDependencies": {
+		"eslint": "^5.5.0",
+		"eslint-config-cepharum": "^1.0.7",
+		"eslint-plugin-promise": "^4.0.1"
+	}
 }
