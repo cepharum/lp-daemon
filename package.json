@@ -23,8 +23,8 @@
 	"homepage": "https://github.com/cepharum/lp-daemon#readme",
 	"dependencies": {
 		"cross-env": "^5.2.0",
-		"debug": "^3.1.0",
-		"ipp-message": "^0.0.4",
+		"debug": "^3.2.0",
+		"ipp-message": "0.0.5",
 		"minimist": "^1.2.0"
 	},
 	"devDependencies": {
